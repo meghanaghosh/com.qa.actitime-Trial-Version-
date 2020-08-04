@@ -8,7 +8,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.annotations.Test;
+//import org.testng.annotations.Test;
 
 /*
  * Name : Meghana
@@ -40,7 +40,7 @@ public class DriverScript {
 	}
 	
 	//Once you done with unit testing ensure to remove @Test annotation, else it will open dual browsers
-	@Test
+	//@Test
 	public static void initBrowser()
 	{
 		String browser = prop.getProperty("browser");

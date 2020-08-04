@@ -13,12 +13,19 @@ import com.acti.base.DriverScript;
 
 
 
-
 public class LoginPage extends DriverScript {
+	
+	
+	////a[@id='loginButton']//div[contains(text(),'Login')]
 	
 	@FindBy(id="username") WebElement usernameTbox;
 	@FindBy(name="pwd") WebElement passwordTbox;
-	@FindBy(name="loginButton") WebElement loginButton;
+	// @FindBy(name="loginButton") WebElement loginButton;
+	
+	@FindBy(xpath="//a[@id='loginButton']//div[contains(text(),'Login')]") WebElement loginButton;
+	
+	//a[@id='loginButton']//div[contains(text(),'Login')]
+	
 	@FindBy(xpath="//div[@class='atLogoImg']") WebElement actiLogo;
 	
 //*******************************************************************************//
